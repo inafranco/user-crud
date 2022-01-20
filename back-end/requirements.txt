@@ -10,3 +10,7 @@ python-multipart
 passlib
 bcrypt
 pyjwt
+# test
+pytest
+pytest-order
+requests
