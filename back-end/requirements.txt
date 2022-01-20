@@ -1,0 +1,16 @@
+# api
+fastapi
+uvicorn
+# orm model and postgres
+ormar
+asyncpg
+psycopg2-binary
+# auth
+python-multipart
+passlib
+bcrypt
+pyjwt
+# test
+pytest
+pytest-order
+requests
