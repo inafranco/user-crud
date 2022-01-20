@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --topbar-size: 60px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #dadce1;
+  text-decoration: none;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+h2, p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.App {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.Topbar {
+  height: var(--topbar-size);
+  background-color: #242526;
+  padding: 0 10px;
+  border-bottom: 1px solid #474a4d;
+}
+
+.Topbar ul {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.Title {
+  margin: calc(var(--topbar-size) * 0.15);
+  width: 200px;
+  height: calc(var(--topbar-size) * 0.7);
+  display: flex;
+  color: #dadce1;
+  /* background-color: red; */
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.Space {
+  width: 100%;
+}
+
+.LoginButton {
+  margin-top: calc(var(--topbar-size) * 0.15);
+  border-radius: 4px;
+  width: 100px;
+  min-width: 100px;
+  height: calc(var(--topbar-size) * 0.7);
+  background-color: #484a4d;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.LoginButton:hover {
+  filter: brightness(1.2);
+}
+
+.LoginSpace {
+  margin-top: calc(var(--topbar-size) * 0.15);
+  width: 100px;
+}
+
+.IconButton {
+  --button-size: calc(var(--topbar-size) * 0.7);
+  margin-top: 10px;
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: #484a4d;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.IconButton:hover {
+  filter: brightness(1.2);
+}
+
+.IconSpace {
+  --button-size: calc(var(--topbar-size) * 0.7);
+  width: var(--button-size);
+  height: var(--button-size);
+  padding: 5px;
+}
+
+main {
+  height: calc(100% - var(--topbar-size));
+  min-height: calc(100vh - var(--topbar-size));
+  padding: 30px;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Card {
+  height: 100%;
+  padding: 30px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.UserFieldsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.Card ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.Card form {
+  display: flex;
+  gap: 10px;
+}
+
+.Card form ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FormItem {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+}
+
+.FormItemField {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FormItemField input {
+  margin-top: -5px;
+  margin-bottom: -5px;
+  padding: 4px;
+  height: 30px;
+}
+
+.FormItem span{
+  height: 5px;
+  font-size: small;
+  color: red;
+}
+
+.Buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.SubmitButton {
+  height: 40px;
+  width: 100px;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  cursor: pointer;
+  border: none;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  border-radius: 12px;
+}
+
+.SubmitButton:hover {
+  filter: brightness(0.8);
+}
+
+.DeleteButton {
+  height: 40px;
+  width: 100px;
+  background: linear-gradient(
+    to left top,
+    rgb(255 20 20 / 0.8),
+    rgb(255 20 20 / 0.5)
+  );
+  cursor: pointer;
+  border: none;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  border-radius: 12px;
+}
+
+.DeleteButton:hover {
+  filter: brightness(0.8);
+}
+
+@media (max-width: 950px) {
+  .Card form {
+    flex-direction: column;
+  }
+}
